@@ -1,0 +1,164 @@
+
+.product-card {
+    background: #1e1e1e;
+    padding: 12px;
+    border-radius: 10px;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Ukuran gambar yang lebih fleksibel */
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*source atas*/
+.product-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.product-frame h2{
+ margin-top: 35px;
+}
+
+.view-more {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 50px;
+}
+.view-more:hover {
+    background-color: gray;
+}
+.product-card h2{
+    color:white;
+}
+.container-ass{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
+    row-gap: 40px;
+    margin-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+  }
+/*source bawah*/
+
+.label {
+    background: #2e7d32;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+}
+h2 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.price {
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.rating {
+    font-size: 16px;
+    color: gold;
+}
+.wishlist {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Responsif untuk tablet (768px) */
+@media (max-width: 1024px) {
+    .container-ass {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .product-card {
+        padding: 10px;
+    }
+    .product-card:hover {
+        transform: none;
+    }
+}
+
+/* Responsif untuk perangkat mobile (480px ke bawah) */
+@media (max-width: 768px) {
+    .container-ass {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        padding: 0 15px;
+    }
+    .product-card:hover {
+        transform: none;
+    }
+
+    .product-card {
+        padding: 8px;
+        
+    }
+
+    .product-card h2 {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .old-price {
+        font-size: 12px;
+    }
+
+    .rating {
+        font-size: 14px;
+    }
+
+    .wishlist {
+        font-size: 18px;
+    }
+
+    .view-more {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Watch Store</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/popup.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">LuxWatch</div>
+        <nav>
+            <ul>
+                <li><a href="./Jam.html">Home</a></li>
+                <li><a href="#product">Collection</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="login.html" class="account-icon">👤</a>
+            <div class="cart-icon" id="cartButton" onclick="window.location.href='checkout.html'">🛒</div>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+
+
+    <section class="hero">
+        <h1>Jam Tangan Premium untuk Anda</h1>
+        <p>Desain Elegan & Kualitas Terbaik</p>
+    </section>
+
+
+    <section class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="./image/jam4.jpg" alt="Luxury Watch 1">
+            </div>
+            <div class="slide">
+                <img src="./image/jam2.jpg" alt="Luxury Watch 2">
+            </div>
+            <div class="slide">
+                <img src="./image/jam3.jpg" alt="Luxury Watch 3">
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+
+<section class="product-frame" id="product">
+    <h1>Best Seller</h1>
+    <div class="container-ass">
+
+    </div>
+    <div>
+        <button class="view-more"  onclick="window.location.href='login.html'">View More</button>
+    </div>
+</section>
+
+    <section class="about-section"> 
+        <div class="about-container">
+            <div class="about-info">
+                <h4>ABOUT US</h4>
+                <h2>Luxatch</h2>
+                <p>At the centre of what we do, and how we do things is a focus on delivering experiences, services and
+                    products based around our business pillars of Quality, Style and Elegance.</p>
+                <button class="about-button">READ MORE</button>
+            </div>
+            <div class="about-image">
+                <img src="./image/about us.jpg" alt="Luxury Store">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-image">
+                <img src="./image/store-bg.png" alt="Luxury Watches">
+            </div>
+            <div class="contact-info">
+                <h4>CONSIGNMENT</h4>
+                <h2>SELL WITH US</h2>
+                <p>You only need to pay the admin fee, only 2% commission, then you can decide the price as you want!
+                </p>
+                <button class="contact-button">CONTACT US</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="./image/banner about.jpg" alt="Luxatch About Us"> 
+            </div>
+            <div class="about-text">
+                <h1>More Than A Store</h1>
+                <p>
+                    Luxatch adalah destinasi utama bagi para pecinta jam tangan premium. Kami menghadirkan koleksi eksklusif dari brand ternama dunia, 
+                    dengan jaminan kualitas terbaik dan desain yang elegan. Setiap produk yang kami tawarkan dipilih secara cermat untuk memberikan 
+                    pengalaman terbaik bagi pelanggan.
+                </p>
+                <p>
+                    Sejak berdiri, kami berkomitmen untuk memberikan layanan terbaik dan memastikan setiap pelanggan mendapatkan jam tangan 
+                    yang sesuai dengan gaya dan kebutuhannya.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-intro">
+        <h1>WHAT YOU WILL FIND WITH US</h1>
+        <p>
+            We believe that a watch is more than just an accessory – it reflects your style, personality, and story.
+            At Luxatch, we curate a collection of timeless and premium watches to match your lifestyle.
+        </p>
+        <p>
+            We focus on detail, quality, and craftsmanship. From luxurious leather straps to elegant designs,
+            our watches are made to stand out.
+        </p>
+        <p>
+            We understand the market and our customers' needs. That’s why we continuously bring
+            new collections that combine modern trends with classic sophistication.
+        </p>
+        <p>
+            At Luxatch, we don’t just sell watches – we build a community of watch lovers.
+            We want you to feel like part of our journey, where style meets passion.
+        </p>
+    </section>
+
+    <section class="contact-us" id="contact">
+        <div class="contact-wrapper">
+            <h2>Contact Us</h2>
+            <p>Have questions? We are here to help!</p>
+
+            <div class="contact-content">
+                <form class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Email: support@luxatch.com</p>
+                    <p>Location: Jakarta, Indonesia</p>
+                    <p>Phone: +62 812-3456-7890</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank">
+        <img src="./image/wa.png" alt="WhatsApp">
+    </a>
+
+    <footer>
+        <p>&copy; 2025 E-Commerce Watch Store. All rights reserved.</p>
+    </footer>
+
+<!-- Modal -->
+<div id="productModal" class="modal">
+    <div class="product-card2">
+        <span class="close">&times;</span>
+        <section class="product-page">
+            <div class="product-container">
+                <div id="thumbnail-container" class="thumbnail-container"></div>
+
+                <!-- Gambar utama -->
+                <div class="product-image">
+                    <img id="modalImage" src="" alt="Jam Tangan">
+                </div>
+
+                <!-- Detail Produk -->
+                <div class="product-details">
+                    <h1 id="modalTitle"></h1>
+                    <p class="price"><span class="old-price">Rp1.439.000</span> <span class="discount">-48%</span></p>
+                    <p id="modalPrice" class="new-price"></p>
+                     <!-- Input Jumlah -->
+                    <div class="quantity-selector">
+                    <input type="number" value="1" min="1">
+                    </div>
+                    <!-- Tombol Beli -->
+                    <div class="buttons">
+                    <button class="buy-now" onclick="window.location.href='product.html';">Beli Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+    <script src="./javascript/scripts.js"></script>
+    <script src="./javascript/home_data.js"></script>
+</body>
+
+</html>
